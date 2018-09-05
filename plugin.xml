@@ -4,7 +4,7 @@
 	<platform name="windows">
 		<config-file parent="/Package/Capabilities" target="package.appxmanifest">
 		  <Capability Name="internetClient" />
-      <Capability Name="internetClientServer"/>
+      <!--<Capability Name="internetClientServer"/> -->
       <!--<Capability Name="privateNetworkClientServer" />-->
 		</config-file>
 	</platform>
