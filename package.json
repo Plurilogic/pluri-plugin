@@ -1,0 +1,12 @@
+{
+  "name": "pluri-plugin",
+  "version": "0.0.3",
+  "description": "\n    Le plugin pour le PPM de Plurilogic \n    ",
+  "cordova": {
+    "id": "pluri-plugin",
+    "platforms": [
+      "windows"
+    ]
+  },
+  "author": "Plurilogic Inc."
+}
