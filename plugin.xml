@@ -8,10 +8,13 @@
       			<!--<Capability Name="privateNetworkClientServer" />-->
 		</config-file>
 	
-                 <config-file parent="/Package/Application/uap:ApplicationContentUriRules" target="package.appxmanifest">		
-			<uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="none" />
-			<uap:Rule Match="ms-appx:///" Type="include" WindowsRuntimeAccess="none" />
-		</config-file>		
-		
+                 <config-file parent="/Package/Application/Application target="package.appxmanifest">
+			Id="com.plurilogic.pp2m" 
+			StartPage="ms-appx-web://0cb0b9ec.testmobile2017/www/index.html"
+			<uap:ApplicationContentUriRules">		
+				<uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="none" />
+				<uap:Rule Match="ms-appx:///" Type="include" WindowsRuntimeAccess="none" />
+			 </uap:ApplicationContentUriRules">		
+		</config-file>				
 	</platform>
 </plugin>
