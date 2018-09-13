@@ -10,7 +10,8 @@
 	
                  <config-file parent="/Package/Applications/Application" target="package.appxmanifest">			
 			<uap:ApplicationContentUriRules">		
-				<uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="none" />
+							
+
 				<uap:Rule Match="ms-appx:///" Type="include" WindowsRuntimeAccess="none" />
 			 </uap:ApplicationContentUriRules">		
 		</config-file>				
