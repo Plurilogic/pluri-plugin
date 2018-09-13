@@ -8,7 +8,7 @@
       			<!--<Capability Name="privateNetworkClientServer" />-->
 		</config-file>
 	
-                 <config-file parent="/Package/Application/Application target="package.appxmanifest">
+                 <config-file parent="/Package/Application/Application" target="package.appxmanifest">
 			Id="com.plurilogic.pp2m" 
 			StartPage="ms-appx-web://0cb0b9ec.testmobile2017/www/index.html"
 			<uap:ApplicationContentUriRules">		
