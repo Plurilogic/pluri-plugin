@@ -8,12 +8,13 @@
       			<!--<Capability Name="privateNetworkClientServer" />-->
 		</config-file>
 	
-                 <config-file parent="/Package/Applications/Application" target="package.appxmanifest">			
-			<uap:ApplicationContentUriRules">		
-							
-
+		
+                 <config-file parent="/Package/Applications/Application" target="package.appxmanifest">	
+			 
+			<uapApplicationContentUriRules">		
 				<uap:Rule Match="ms-appx:///" Type="include" WindowsRuntimeAccess="none" />
-			 </uap:ApplicationContentUriRules">		
+			 </uapApplicationContentUriRules">		
+				
 		</config-file>				
 	</platform>
 </plugin>
