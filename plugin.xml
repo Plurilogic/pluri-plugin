@@ -4,8 +4,14 @@
 	<platform name="windows">
 		<config-file parent="/Package/Capabilities" target="package.appxmanifest">
 			<Capability Name="internetClient" /> 
-      			<Capability Name="internetClientServer"/> 
+      			<!--<Capability Name="internetClientServer"/> -->
       			<!--<Capability Name="privateNetworkClientServer" />-->
 		</config-file>
+	
+                 <config-file parent="/Package/Application/uap:ApplicationContentUriRules" target="package.appxmanifest">		
+			<uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="none" />
+			<uap:Rule Match="ms-appx:///" Type="include" WindowsRuntimeAccess="none" />
+		</config-file>		
+		
 	</platform>
 </plugin>
