@@ -3,7 +3,7 @@
 	<name>pluri-plugin</name>
 	
 	<platform name="android">
-		<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="overwrite">
+		<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
 			<application allowBackup="false"/>
 			<application fullBackupContent="false" />
 		</edit-config> 
