@@ -1,14 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="pluri-plugin" version="0.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-  <name>pluri-plugin</name>
+<plugin id="pluri-plugin" version="0.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>pluri-plugin</name>
+	
+	<platform name="android">
+		<edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+			<application allowBackup="false"/>
+			<application fullBackupContent="false" />
+		</edit-config> 
+	</platform>
+	
 	<platform name="windows">
 		<config-file parent="/Package/Capabilities" target="package.appxmanifest">
 			<Capability Name="internetClient" /> 
-      			<!--<Capability Name="internetClientServer"/> -->
-      			<!--<Capability Name="privateNetworkClientServer" />-->
-		</config-file>
-	
-
-            				
+			<!--<Capability Name="internetClientServer"/> -->
+			<!--<Capability Name="privateNetworkClientServer" />-->
+		</config-file>		
 	</platform>
+	
 </plugin>
